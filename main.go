@@ -29,7 +29,7 @@ func main() {
 	flag.IntVar(&retrySNI, "retry-sni", 3, "max SNI attempts per config")
 	flag.BoolVar(&enableTCPProbe, "tcp-probe", true, "fast TCP probe before starting xray")
 	flag.IntVar(&maxWorkCfg, "maxworkcfg", 0, "stop after N working configs (0 = unlimited)")
-	flag.BoolVar(&serveKeep, "serve-keep", true, "keep web server running after checks finish")
+	flag.BoolVar(&serveKeep, "serve-keep", false, "keep web server running after checks finish")
 	flag.Parse()
 
 	// конфиг веба + старт сервера
