@@ -25,7 +25,7 @@ jobs:
       - name: Run Checker
         run: |
           go mod tidy
-          go run . -serve-keep=false
+          go run .
 
       - name: Commit and Push results
         run: |
