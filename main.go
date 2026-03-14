@@ -29,7 +29,7 @@ func main() {
 	flag.IntVar(&retrySNI, "retry-sni", 3, "max SNI attempts per config")
 	flag.BoolVar(&enableTCPProbe, "tcp-probe", true, "fast TCP probe before starting xray")
 	flag.IntVar(&maxWorkCfg, "maxworkcfg", 0, "stop after N working configs (0 = unlimited)")
-	flag.BoolVar(&serveKeep, "serve-keep", false, "keep web server running after checks finish")
+	flag.BoolVar(&serveKeep, "serve-keep", true, "keep web server running after checks finish")
 	flag.Parse()
 
 	// конфиг веба + старт сервера
@@ -40,10 +40,17 @@ func main() {
 	}
 	srv := StartWebServer(cfg)
 
-	// первый скан — в фоне (использует текущий -maxworkcfg)
-	go RunScanOnce(maxWorkCfg)
+	if serveKeep {
+		// Если запускаем локально (нужен сайт) — скан в фоне, сервер висит
+		go RunScanOnce(maxWorkCfg)
+		waitIfServeKeep(srv)
+	} else {
+		// Если запускаем в GitHub Actions — убираем 'go', чтобы main ЖДАЛ завершения скана
+		fmt.Println("--- STARTING SCAN ---")
+		RunScanOnce(maxWorkCfg) // Программа "застрянет" тут, пока всё не проверит
+		fmt.Println("--- SCAN FINISHED ---")
+		_ = srv.Shutdown()
+	}
 
-	// держим веб-сервер живым
-	waitIfServeKeep(srv)
 	_ = os.Stdout.Sync()
 }
