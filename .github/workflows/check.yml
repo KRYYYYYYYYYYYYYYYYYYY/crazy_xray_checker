@@ -25,12 +25,12 @@ jobs:
       - name: Run Checker
         run: |
           go mod tidy
-          go run .
+          run: go run . -serve-keep=false
 
       - name: Commit and Push results
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Update proxy check results: $(date)" || echo "No changes to commit"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add result/
+          git commit -m "Update working nodes" || exit 0
           git push
