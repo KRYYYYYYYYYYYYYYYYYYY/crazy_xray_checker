@@ -25,12 +25,12 @@ jobs:
       - name: Run Checker
         run: |
           go mod tidy
-          run: go run . -serve-keep=false
+          go run . -serve-keep=false
 
       - name: Commit and Push results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add result/
+          git add result/ || true
           git commit -m "Update working nodes" || exit 0
           git push
