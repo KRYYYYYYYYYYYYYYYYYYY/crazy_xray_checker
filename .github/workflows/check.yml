@@ -1,0 +1,36 @@
+name: Xray Proxy Checker
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Запуск каждый час
+  workflow_dispatch:      # Позволяет запустить вручную кнопкой
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+
+      - name: Install Dependencies
+        run: |
+          chmod +x install-go-xray.sh
+          ./install-go-xray.sh
+
+      - name: Run Checker
+        run: |
+          go run main.go
+          # Здесь скрипт должен прочитать input.txt и выдать результат
+
+      - name: Commit and Push results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Update proxy check results: $(date)" || echo "No changes to commit"
+          git push
