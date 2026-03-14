@@ -24,8 +24,8 @@ jobs:
 
       - name: Run Checker
         run: |
-          go run main.go
-          # Здесь скрипт должен прочитать input.txt и выдать результат
+          go mod tidy
+          go run .
 
       - name: Commit and Push results
         run: |
