@@ -40,17 +40,15 @@ func main() {
 	}
 	srv := StartWebServer(cfg)
 
-	if serveKeep {
-		// Если запускаем локально (нужен сайт) — скан в фоне, сервер висит
-		go RunScanOnce(maxWorkCfg)
-		waitIfServeKeep(srv)
-	} else {
-		// Если запускаем в GitHub Actions — убираем 'go', чтобы main ЖДАЛ завершения скана
-		fmt.Println("--- STARTING SCAN ---")
-		RunScanOnce(maxWorkCfg) // Программа "застрянет" тут, пока всё не проверит
-		fmt.Println("--- SCAN FINISHED ---")
-		_ = srv.Shutdown()
-	}
+	// 3. САМОЕ ГЛАВНОЕ: Просто запускаем скан напрямую. 
+	// Никаких 'go', никаких фонов. Программа будет работать, пока не закончит.
+	fmt.Println("--- STARTING SCAN ---")
+	RunScanOnce(maxWorkCfg) 
+	fmt.Println("--- SCAN FINISHED, SAVING RESULTS ---")
 
+	// 4. Принудительно закрываем сервер и выходим
+	_ = srv.Shutdown()
 	_ = os.Stdout.Sync()
+	
+	// Программа завершится сама здесь
 }
