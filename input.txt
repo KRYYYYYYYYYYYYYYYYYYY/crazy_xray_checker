@@ -7,5 +7,3 @@ https://raw.githubusercontent.com/makitaltdriddim-web/vpn-configs-for-russia-/re
 https://raw.githubusercontent.com/makitaltdriddim-web/vpn-configs-for-russia-/refs/heads/main/WHITE-CIDR-RU-all.txt
 https://raw.githubusercontent.com/makitaltdriddim-web/vpn-configs-for-russia-/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt
 https://raw.githubusercontent.com/makitaltdriddim-web/vpn-configs-for-russia-/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt
-https://raw.githubusercontent.com/makitaltdriddim-web/vpn-configs-for-russia-/refs/heads/main/BLACK_VLESS_RUS_mobile.txt
-https://raw.githubusercontent.com/makitaltdriddim-web/vpn-configs-for-russia-/refs/heads/main/BLACK_VLESS_RUS.txt 
