@@ -1,1 +1,1 @@
-vless://38d366ac-7e14-49f4-8ff8-1a43f7ada6ef@94.139.246.255:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=vkclip.enotfast.com&pbk=CGOMSAFIwnQdt2HQ3yTZr608Dc_fhjjIenocbiCYZWk&sid=12b4bc71293e01#%F0%9F%87%B7%F0%9F%87%BA%20VK%20%E2%80%94%20%232
+vless://e301eb29-8d52-07d0-83dd-1b7a42a6a2b2@89.208.228.45:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=tls&fp=qq&sni=anti-vpn.ru&alpn=h2%2Chttp%2F1.1#%F0%9F%87%B7%F0%9F%87%BA%20VK%20%E2%80%94%20%239
