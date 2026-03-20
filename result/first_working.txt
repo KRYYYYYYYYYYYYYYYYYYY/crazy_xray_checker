@@ -1,1 +1,1 @@
-vless://8f20393c-8a8e-4aae-bc4d-6b8ae137afe6@89.208.208.201:701?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE&sid=f2b78452f9233f26#%F0%9F%87%B7%F0%9F%87%BA%20VK%20%E2%80%94%20%2310
+vless://630011ef-3dbb-767d-53dd-7f7d72dd915f@95.163.214.120:5443?encryption=none&type=ws&security=tls&host=ndded2.subsvdragontoo.online&sni=ndded2.subsvdragontoo.online#%F0%9F%87%B7%F0%9F%87%BA%20VK%20%E2%80%94%20%2320
