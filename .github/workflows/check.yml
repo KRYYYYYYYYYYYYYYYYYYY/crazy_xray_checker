@@ -31,6 +31,15 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add result/ || true
+          
+          # 1. Удаляем из индекса большой файл, если он туда случайно попал
+          git rm --cached result/result.txt || true
+          
+          # 2. Добавляем ТОЛЬКО полезный файл
+          git add result/working.txt || true
+          
+          # 3. Если есть другие важные файлы, добавь их отдельно, 
+          # либо используй git add ., но тогда обязательно создай .gitignore
+          
           git commit -m "Update working nodes" || exit 0
           git push
