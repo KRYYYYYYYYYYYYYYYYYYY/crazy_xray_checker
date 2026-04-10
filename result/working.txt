@@ -1,1 +1,1 @@
-vless://d5b7d347-6488-4091-bb61-384bbe57078a@217.16.21.156:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=www.intel.com&pbk=cAMzF4vEMpmlTtHbgm3FoM4PpZ-lrkyFWAqjBmelxH4&sid=3c46#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20VK
+vless://568c2ed4-e368-4910-8f04-b51afc111140@51.250.117.39:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=tunnel.vk-apps.com&pbk=EzS6YGgfE-F0jR0-xXB5rVBh-1oNSC17oquln8hK4Wo&sid=dce3019e#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20YA
