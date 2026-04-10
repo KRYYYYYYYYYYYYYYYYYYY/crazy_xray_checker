@@ -1,1 +1,1 @@
-vless://568c2ed4-e368-4910-8f04-b51afc111140@51.250.117.39:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=tunnel.vk-apps.com&pbk=EzS6YGgfE-F0jR0-xXB5rVBh-1oNSC17oquln8hK4Wo&sid=dce3019e#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20YA
+vless://74c459f7-f99a-4132-aa81-4cbfd66ae29d@212.233.97.139:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=rbc.ru&pbk=7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg&sid=8ba12e75110b7a9c#%F0%9F%87%AD%F0%9F%87%BA%20Hungary%20%5B%2ACIDR%5D%20VK
