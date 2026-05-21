@@ -1,5 +1,1 @@
-vless://176afece-4d03-4b51-8025-e2af861fb2de@51.250.67.130:443?type=ws&allowInsecure=1#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
-vless://176afece-4d03-4b51-8025-e2af861fb2de@84.252.137.42:443?encryption=none&type=ws&security=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
-vless://176afece-4d03-4b51-8025-e2af861fb2de@84.252.137.42:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM&sid=d7e1abac&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
-vless://893d05aa-522a-4ebf-b61d-9a9d52d09ac1@51.250.67.130:443?encryption=none&type=ws&security=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
-vless://893d05aa-522a-4ebf-b61d-9a9d52d09ac1@84.252.137.42:443?encryption=none&type=ws&security=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
+vless://33b6b258-24c5-456c-b319-bf85103747b2@178.154.225.241:443?encryption=none&type=ws&security=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
