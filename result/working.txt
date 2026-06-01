@@ -1,1 +1,1 @@
-vless://86a0325c-06c2-434b-a616-c2a40ac5d8f0@158.160.150.233:443?flow=xtls-rprx-vision&fp=chrome&pbk=r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs&security=reality&sid=d995792afeb193&sni=ads.x5.ru&type=tcp#%F0%9F%87%A8%F0%9F%87%BF%20Czechia%20%5B%2ACIDR%5D%20YA
+vless://223e6af9-95bb-4268-92ac-a552c54b47f1@84.201.179.200:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs&spx=/#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D%20YA
